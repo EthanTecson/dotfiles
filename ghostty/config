@@ -1,0 +1,18 @@
+# Theme
+theme = Adwaita Dark
+
+# Font
+font-family = "JetBrains Mono"
+font-size = 18 
+font-thicken = true
+
+# Linux UI Style
+cursor-style = block
+# macos-titlebar-style = hidden
+# window-padding-balance = true
+window-padding-x = 10
+window-padding-y = 10
+
+# Transparency
+background-opacity = 0.70
+background-blur = true
