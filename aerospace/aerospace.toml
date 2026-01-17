@@ -1,9 +1,15 @@
-# -- GLOBAL/BACKGROUND SETTINGS --
-
-# This tells Sketchybar to update whenever you switch workspaces
-exec-on-workspace-change = ['/bin/bash', '-c', 'sketchybar --trigger aerospace_workspace_change FOCUSED_WORKSPACE=$AEROSPACE_FOCUSED_WORKSPACE']
-
+# --- GLOBAL SETTINGS ---
 start-at-login = false
+
+# This runs once when AeroSpace starts up
+after-startup-command = [
+  'exec-and-forget /opt/homebrew/bin/borders active_color=0xff00dfff inactive_color=0x00000000 width=5.0 &'
+]
+
+# This runs every time you move between workspaces
+exec-on-workspace-change = [
+  'exec-and-forget /opt/homebrew/bin/borders active_color=0xff00dfff inactive_color=0x00000000 width=5.0 &'
+]
 
 # Mouse follows focus when focused monitor changes
 on-focused-monitor-changed = ['move-mouse monitor-lazy-center']
