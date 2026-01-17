@@ -1,18 +1,15 @@
-# Theme
+# --- Appearance ---
 theme = Adwaita Dark
-cursor-style = block
-
-# Font 
 font-family = "JetBrains Mono"
 font-size = 18
 font-thicken = true
 
-# Linux UI Style
+# --- UI Style ---
 cursor-style = block
 window-padding-x = 10
 window-padding-y = 10
+shell-integration-features = no-cursor
 
-# Transparency
+# --- Transparency ---
 background-opacity = 0.70
 background-blur = true
-
