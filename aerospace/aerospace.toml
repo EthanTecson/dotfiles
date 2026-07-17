@@ -27,6 +27,10 @@ run = 'layout floating'
 if.app-name-regex-substring = 'messages'
 run = 'layout floating'
 
+[[on-window-detected]]
+if.app-name-regex-substring = 'facetime'
+run = 'layout floating'
+
 # --- GAPS ---
 [gaps]
 inner.horizontal = 20
@@ -89,17 +93,25 @@ alt-shift-equal = 'resize smart +50'
 alt-shift-semicolon = 'mode service'
 
 # -- hot key openings -- 
-# alt-s = 'exec-and-forget open -a /Applications/Spotify.app'
+
+# Finder: Focus on existing app regardless of workspace
 alt-f = 'exec-and-forget open -a /System/Library/CoreServices/Finder.app'
+
+# Ghostty: Focus on existing app regardless of workspace
 alt-g = 'exec-and-forget open -a /Applications/Ghostty.app'
-alt-c = 'exec-and-forget open -a /Applications/Chrome.app'
 
 # Spotify: Focus existing app regardless of workspace
 alt-s = 'exec-and-forget open -a "Spotify"'
 
-# Zen Browser: Force a NEW window every time
+# Notes: Focus existing app regardless of workspace
+alt-n = 'exec-and-forget open -a "Notes"'
+
+# Notes: Focus existing app regardless of workspace
+alt-m = 'exec-and-forget open -a "Messages"'
+
+# Chrome Browser: Force a NEW window every time
 # The -n flag tells macOS to open a new instance/window
-alt-z = 'exec-and-forget open -na "Zen"'
+alt-b = 'exec-and-forget open -na "Chrome"'
 
 [mode.service.binding]
 r = ['flatten-workspace-tree', 'mode main']
